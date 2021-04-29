@@ -1,0 +1,191 @@
+header nav {
+
+    & button {
+        margin-left:0em;
+    }
+}
+
+main {
+    width: 100%;
+    background-color: rgb(40, 40, 40);
+    color: whitesmoke;
+    text-align: center;
+    padding: 5vh 5vw 3vh 5vw;
+
+    & form {
+        height: 20vh;
+
+        & .maininputs {
+            height: 30%;
+            display: flex;
+            flex-direction: row;
+            justify-content: center;
+
+            & .maininput {
+                margin: 0 1vw;
+
+                & input[type="text"] {
+                    height: 100%;
+                    background: none;
+                    border-style: solid;
+                    border-color: whitesmoke;
+                    border-radius: 0.4em;
+                    border-width: 0.15em;
+                    text-align: center;
+                    color: whitesmoke;
+                    &::placeholder {
+                        color: whitesmoke;
+                    }
+                }
+            }
+
+            & i.fas {
+                color: whitesmoke;
+                font-size: 1.5vmin;
+            }
+        }
+
+        & button {
+            height: 30%;
+            width: 15%;
+            color: whitesmoke;
+            background: none;
+            border-style: solid;
+            border-color: whitesmoke;
+            border-radius: 0.4em;
+            border-width: 0.15em;
+            display: flex;
+            flex-direction: row;
+            align-items: center;
+            padding: 0;
+            margin: 5vh auto 0 auto;
+
+            & .rechercher {
+                width: 85%;
+                height: 100%;
+                margin: 0;
+                border-bottom-left-radius: 0.4em;
+                border-top-left-radius: 0.4em;
+                display: flex;
+                align-items: center;
+                justify-content: center;
+            }
+
+            & .buttonarrow {
+                height: 100%;
+                width: 15%;
+                border-bottom-right-radius: 0.4em;
+                border-top-right-radius: 0.4em;
+                display: flex;
+                align-items: center;
+                justify-content: center;
+            }
+        }
+    }
+}
+
+#mainnavbar {
+    background-color: rgb(100, 100, 100);
+    padding: 1vh 10vw;
+
+    & a {
+        text-align: center;
+        text-decoration: none;
+        color: whitesmoke;
+    }
+}
+
+#recentoffers {
+    background: rgb(0,86,255);
+    background: linear-gradient(90deg, rgba(0,86,255,1) 0%, rgba(106,64,170,1) 50%, rgba(0,255,81,1) 100%);
+    padding: 5vh 5vw;
+    height: 80vh;
+    overflow-y: scroll;
+
+    &::-webkit-scrollbar {
+        display: none;
+    }
+
+    & .recentoffer {
+        background-color: whitesmoke;
+        border-radius: 0.5em;
+        box-shadow: 5px 5px 15px 5px #515151;
+        padding: 3vh 2vw;
+        margin-bottom: 5vh;
+        display: grid;
+        grid-template-columns: 2fr 3fr;
+        grid-template-rows: 100%;
+        cursor: pointer;
+        &:hover {
+            transform:scale(1.01);
+            transform: 1.05s ease-in-out;
+            background-color:mintcream ;
+        }
+
+        #recentofferleft {
+            display: grid;
+            grid-template-areas:
+                "companylogo companyname"
+                "companylogo entitled";
+            height: 100%;
+            grid-template-columns: 30% 70%;
+            grid-template-rows: 3fr 2fr;
+        }
+
+        & #companyname {
+            grid-area: companyname;
+            text-align: left;
+            margin: auto 0;
+            font-size: 2vmin;
+        }
+
+        & #companylogo {
+            grid-area: companylogo;
+            height: 10vh;
+            margin: auto auto;
+        }
+
+        & #entitled {
+            grid-area: entitled;
+            width: 100%;
+            margin: auto 0;
+            font-size: 2vmin;
+        }
+
+        & #description {
+
+            overflow-wrap: anywhere;
+        }
+    }
+}
+
+#companycarousel {
+
+    background-color:gray;
+    height:11vh;
+    margin: 1em 3em 1em 3em;
+    border-radius: 1em;
+    padding-left: 10em;
+    padding-right: 10em;
+    padding-top: 0.5em;
+    text-align: center;
+
+        & #companys {
+            margin-left: 25%;
+            margin-top: 0.4em;
+            border-top-style: solid;
+            border-top-width: thin;
+            border-color: black;
+            width: 50%;
+        }
+        & a {
+            color: whitesmoke;
+            text-decoration: none;
+            padding-top: 0.1em;
+        }
+
+
+        & img {
+        height: 7vh;
+        }
+}

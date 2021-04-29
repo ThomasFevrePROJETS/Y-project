@@ -1,0 +1,242 @@
+header nav button {
+  margin-left: 0em;
+}
+
+main {
+  width: 100%;
+  background-color: #282828;
+  color: whitesmoke;
+  text-align: center;
+  padding: 5vh 5vw 3vh 5vw;
+}
+
+main form {
+  height: 20vh;
+}
+
+main form .maininputs {
+  height: 30%;
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-orient: horizontal;
+  -webkit-box-direction: normal;
+      -ms-flex-direction: row;
+          flex-direction: row;
+  -webkit-box-pack: center;
+      -ms-flex-pack: center;
+          justify-content: center;
+}
+
+main form .maininputs .maininput {
+  margin: 0 1vw;
+}
+
+main form .maininputs .maininput input[type="text"] {
+  height: 100%;
+  background: none;
+  border-style: solid;
+  border-color: whitesmoke;
+  border-radius: 0.4em;
+  border-width: 0.15em;
+  text-align: center;
+  color: whitesmoke;
+}
+
+main form .maininputs .maininput input[type="text"]::-webkit-input-placeholder {
+  color: whitesmoke;
+}
+
+main form .maininputs .maininput input[type="text"]:-ms-input-placeholder {
+  color: whitesmoke;
+}
+
+main form .maininputs .maininput input[type="text"]::-ms-input-placeholder {
+  color: whitesmoke;
+}
+
+main form .maininputs .maininput input[type="text"]::placeholder {
+  color: whitesmoke;
+}
+
+main form .maininputs i.fas {
+  color: whitesmoke;
+  font-size: 1.5vmin;
+}
+
+main form button {
+  height: 30%;
+  width: 15%;
+  color: whitesmoke;
+  background: none;
+  border-style: solid;
+  border-color: whitesmoke;
+  border-radius: 0.4em;
+  border-width: 0.15em;
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-orient: horizontal;
+  -webkit-box-direction: normal;
+      -ms-flex-direction: row;
+          flex-direction: row;
+  -webkit-box-align: center;
+      -ms-flex-align: center;
+          align-items: center;
+  padding: 0;
+  margin: 5vh auto 0 auto;
+}
+
+main form button .rechercher {
+  width: 85%;
+  height: 100%;
+  margin: 0;
+  border-bottom-left-radius: 0.4em;
+  border-top-left-radius: 0.4em;
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-align: center;
+      -ms-flex-align: center;
+          align-items: center;
+  -webkit-box-pack: center;
+      -ms-flex-pack: center;
+          justify-content: center;
+}
+
+main form button .buttonarrow {
+  height: 100%;
+  width: 15%;
+  border-bottom-right-radius: 0.4em;
+  border-top-right-radius: 0.4em;
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-align: center;
+      -ms-flex-align: center;
+          align-items: center;
+  -webkit-box-pack: center;
+      -ms-flex-pack: center;
+          justify-content: center;
+}
+
+#mainnavbar {
+  background-color: #646464;
+  padding: 1vh 10vw;
+}
+
+#mainnavbar a {
+  text-align: center;
+  text-decoration: none;
+  color: whitesmoke;
+}
+
+#recentoffers {
+  background: #0056ff;
+  background: -webkit-gradient(linear, left top, right top, from(#0056ff), color-stop(50%, #6a40aa), to(#00ff51));
+  background: linear-gradient(90deg, #0056ff 0%, #6a40aa 50%, #00ff51 100%);
+  padding: 5vh 5vw;
+  height: 80vh;
+  overflow-y: scroll;
+}
+
+#recentoffers::-webkit-scrollbar {
+  display: none;
+}
+
+#recentoffers .recentoffer {
+  background-color: whitesmoke;
+  border-radius: 0.5em;
+  -webkit-box-shadow: 5px 5px 15px 5px #515151;
+          box-shadow: 5px 5px 15px 5px #515151;
+  padding: 3vh 2vw;
+  margin-bottom: 5vh;
+  display: -ms-grid;
+  display: grid;
+  -ms-grid-columns: 2fr 3fr;
+      grid-template-columns: 2fr 3fr;
+  -ms-grid-rows: 100%;
+      grid-template-rows: 100%;
+  cursor: pointer;
+}
+
+#recentoffers .recentoffer:hover {
+  -webkit-transform: scale(1.01);
+          transform: scale(1.01);
+  -webkit-transform: 1.05s ease-in-out;
+          transform: 1.05s ease-in-out;
+  background-color: mintcream;
+}
+
+#recentoffers .recentoffer #recentofferleft {
+  display: -ms-grid;
+  display: grid;
+      grid-template-areas: "companylogo companyname" "companylogo entitled";
+  height: 100%;
+  -ms-grid-columns: 30% 70%;
+      grid-template-columns: 30% 70%;
+  -ms-grid-rows: 3fr 2fr;
+      grid-template-rows: 3fr 2fr;
+}
+
+#recentoffers .recentoffer #companyname {
+  -ms-grid-row: 1;
+  -ms-grid-column: 2;
+  grid-area: companyname;
+  text-align: left;
+  margin: auto 0;
+  font-size: 2vmin;
+}
+
+#recentoffers .recentoffer #companylogo {
+  -ms-grid-row: 1;
+  -ms-grid-row-span: 2;
+  -ms-grid-column: 1;
+  grid-area: companylogo;
+  height: 10vh;
+  margin: auto auto;
+}
+
+#recentoffers .recentoffer #entitled {
+  -ms-grid-row: 2;
+  -ms-grid-column: 2;
+  grid-area: entitled;
+  width: 100%;
+  margin: auto 0;
+  font-size: 2vmin;
+}
+
+#recentoffers .recentoffer #description {
+  overflow-wrap: anywhere;
+}
+
+#companycarousel {
+  background-color: gray;
+  height: 11vh;
+  margin: 1em 3em 1em 3em;
+  border-radius: 1em;
+  padding-left: 10em;
+  padding-right: 10em;
+  padding-top: 0.5em;
+  text-align: center;
+}
+
+#companycarousel #companys {
+  margin-left: 25%;
+  margin-top: 0.4em;
+  border-top-style: solid;
+  border-top-width: thin;
+  border-color: black;
+  width: 50%;
+}
+
+#companycarousel a {
+  color: whitesmoke;
+  text-decoration: none;
+  padding-top: 0.1em;
+}
+
+#companycarousel img {
+  height: 7vh;
+}
+/*# sourceMappingURL=index.css.map */

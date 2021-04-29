@@ -1,0 +1,350 @@
+#right {
+    & #detailedinfos {
+        overflow-y: scroll;
+
+        .grid-container {
+            display: grid;
+            grid-template-columns: 1fr 1fr 0fr 0fr;
+            grid-template-rows: 1fr 0.5fr 0.5fr 2fr;
+            gap: 0px 0px;
+            grid-template-areas:
+              "desciptioncompany desciptioncompany desciptioncompany desciptioncompany"
+              "recentoffers location . ."
+              "centerBut centerBut . ."
+              "statistiques statistiques . .";
+          }
+          .desciptioncompany { grid-area: desciptioncompany; }
+          .recentoffers { grid-area: recentoffers; }
+          .location { grid-area: location; }
+          .centerBut { grid-area: centerBut; }
+          .statistiques { grid-area: statistiques; }
+
+        & .desciptioncompany {
+            color:white;
+            border-style: solid;
+            border-radius: 0.4em;
+            padding: 1em;
+            margin: 1vh;
+
+            & #hidecompany {
+                width: 10%;
+                padding: 1em;
+                border-radius: 0.4em;
+                background-color:royalblue;
+                color: white;
+
+                &:hover {
+                    box-shadow: 2px 2px 15px 2px #2b2929;
+                    background-color:rgb(196, 16, 16);
+                    transform: scale(1.7);
+                }
+            }
+        }
+
+        & .recentoffers {
+            color:white;
+            border-style: solid;
+            border-radius: 0.4em;
+            padding: 1em;
+            margin: 1vh;
+        }
+
+        & .location {
+            color:white;
+            border-style: solid;
+            border-radius: 0.4em;
+            padding: 1em;
+            margin: 1vh;
+        }
+
+        & .statistiques {
+            color:white;
+            border-style: solid;
+            border-radius: 0.4em;
+            padding: 1em;
+            margin: 1vh;
+        }
+
+        & .centerBut {
+            padding:1em;
+            margin: 1vh;
+
+            & #graduation, #update, #delete {
+                margin-left: 10%;
+                width: 20%;
+                padding: 1em;
+                border-radius: 0.4em;
+                background-color:royalblue;
+                color: white;
+
+                &:hover {
+                    box-shadow: 2px 2px 15px 2px #2b2929;
+                    background-color:blue;
+                    transform: scale(1.1);
+                }
+            }
+
+        }
+
+    }
+}
+
+#modalcreatecompany {
+    & .modal-dialog {
+        & .modal-content {
+            padding: 3vh 2vw;
+            background-color: rgb(50, 50, 50);
+
+            & .modal-header {
+                border: none;
+                color: whitesmoke;
+
+                & h5 {
+                    width: 100%;
+                    text-align: center;
+                }
+            }
+
+            & .modal-body {
+
+                & #selectionstatut {
+                    text-align: center;
+                }
+
+                & label {
+                    color: rgb(255, 255, 255);
+                    display: block;
+                    width: 100%;
+                }
+
+                & .required:after {
+                    content:"*";
+                    color:red;
+                }
+
+                & p {
+                    color: white;
+                    margin:0;
+                    padding:0;
+                }
+
+                & input {
+                    color:rgb(255, 255, 255);
+                    outline: none;
+                    background: none;
+                    border: none;
+                    border-bottom: 2px solid white;
+                    width: 100%;
+                }
+
+                & select {
+                    color:rgb(255, 255, 255);
+                    outline: none;
+                    background: none;
+                    border: none;
+                    border-bottom: 2px solid white;
+                    width: 100%;
+                }
+
+                & .col {
+                    padding: 0 1vw;
+                }
+            }
+
+            & .modal-footer {
+                border: none;
+
+                & #buttoncreate {
+                    background: rgb(0,86,255);
+                    background: linear-gradient(90deg, rgba(0,86,255,1) 0%, rgba(106,64,170,1) 50%, rgba(0,255,81,1) 100%);
+                    width: 40%;
+                    color : white;
+                    border: 1px;
+                    border-radius: 0.5em;
+                    padding: 1vh 2vw;
+                }
+            }
+        }
+    }
+}
+
+#modalupdatecompany {
+    & .modal-dialog {
+        & .modal-content {
+            padding: 3vh 2vw;
+            background-color: rgb(50, 50, 50);
+
+            & .modal-header {
+                border: none;
+                color: whitesmoke;
+
+                & h5 {
+                    width: 100%;
+                    text-align: center;
+                }
+            }
+
+            & .modal-body {
+
+                & label {
+                    color: rgb(255, 255, 255);
+                    display: block;
+                    width: 100%;
+                }
+
+                & .required:after {
+                    content:"*";
+                    color:red;
+                }
+
+                & p {
+                    color: white;
+                    margin:0;
+                    padding:0;
+                }
+
+                & input {
+                    color:rgb(255, 255, 255);
+                    outline: none;
+                    background: none;
+                    border: none;
+                    border-bottom: 2px solid white;
+                    width: 100%;
+                }
+            }
+
+            & .modal-footer {
+                border: none;
+
+                & #buttonupdate {
+                    background: rgb(0,86,255);
+                    background: linear-gradient(90deg, rgba(0,86,255,1) 0%, rgba(106,64,170,1) 50%, rgba(0,255,81,1) 100%);
+                    width: 40%;
+                    color : white;
+                    border: 1px;
+                    border-radius: 0.5em;
+                    padding: 1vh 2vw;
+                }
+            }
+        }
+    }
+}
+
+#modaldeletecompany {
+    & .modal-dialog {
+        & .modal-content {
+            padding: 3vh 2vw;
+            background-color: rgb(50, 50, 50);
+
+            & .modal-header {
+                border: none;
+
+                & h5 {
+                    color: red;
+                    font-weight: bold;
+                    width: 100%;
+                    text-align: center;
+                }
+            }
+
+            & .modal-body {
+
+                & p {
+                    text-align: center;
+                    color: white;
+                    margin:0;
+                    padding:0;
+                }
+            }
+
+            & .modal-footer {
+                border: none;
+
+                & form {
+
+                    width: 100%;
+                    display: flex;
+                    justify-content: center;
+                }
+
+                & #buttondelete {
+                    background: rgb(0,86,255);
+                    background: linear-gradient(90deg, rgba(0,86,255,1) 0%, rgba(106,64,170,1) 50%, rgba(0,255,81,1) 100%);
+                    width: 40%;
+                    color : white;
+                    border: 1px;
+                    border-radius: 0.5em;
+                    padding: 1vh 2vw;
+
+                    &:hover {
+                        transform: scale(1.05);
+                    }
+                }
+            }
+        }
+    }
+}
+
+#modalratecompany {
+    & .modal-dialog {
+        & .modal-content {
+            padding: 3vh 2vw;
+            background-color: rgb(50, 50, 50);
+
+            & .modal-header {
+                border: none;
+                color: whitesmoke;
+
+                & h5 {
+                    width: 100%;
+                    text-align: center;
+                }
+            }
+
+            & .modal-body {
+
+                & label {
+                    color: rgb(255, 255, 255);
+                    display: block;
+                    width: 100%;
+                }
+
+                & select {
+                    color:rgb(255, 255, 255);
+                    outline: none;
+                    background-color: rgb(50, 50, 50);
+                    border: none;
+                    border-bottom: 2px solid white;
+                    width: 100%;
+                }
+
+                & input {
+                    color:rgb(255, 255, 255);
+                    outline: none;
+                    background-color: rgb(50, 50, 50);
+                    border: none;
+                    border-bottom: 2px solid white;
+                    width: 100%;
+                }
+            }
+
+            & .modal-footer {
+                border: none;
+
+                & #buttonrate {
+                    background: rgb(0,86,255);
+                    background: linear-gradient(90deg, rgba(0,86,255,1) 0%, rgba(106,64,170,1) 50%, rgba(0,255,81,1) 100%);
+                    width: 40%;
+                    color : white;
+                    border: 1px;
+                    border-radius: 0.5em;
+                    padding: 1vh 2vw;
+                }
+            }
+        }
+    }
+
+    & .modal-lg {
+        max-width: 80%;
+    }
+}

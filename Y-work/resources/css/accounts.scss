@@ -1,0 +1,272 @@
+
+#right {
+
+    & nav {
+
+        & #createaccount {
+
+            float: left;
+        }
+
+        & #otherlinks {
+
+            float: right;
+        }
+
+        & button {
+
+            border: none;
+            color: black;
+            font-size: 1.2rem;
+            background: none;
+        }
+    }
+}
+
+#modalcreateaccount {
+    & .modal-dialog {
+        & .modal-content {
+            padding: 3vh 2vw;
+            background-color: rgb(100, 100, 100);
+
+            & .modal-header {
+                border: none;
+                color: whitesmoke;
+
+                & h5 {
+                    width: 100%;
+                    text-align: center;
+                }
+            }
+
+            & .modal-body {
+
+                & #selectionstatut {
+                    text-align: center;
+                }
+
+                & label {
+                    color: rgb(255, 255, 255);
+                    display: block;
+                    width: 100%;
+                }
+
+                & input {
+                    color:rgb(255, 255, 255);
+                    outline: none;
+                    background-color: rgb(100, 100, 100);
+                    border: none;
+                    border-bottom: 2px solid white;
+                    width: 100%;
+                }
+
+                & select {
+                    color:rgb(255, 255, 255);
+                    outline: none;
+                    background-color: rgb(100, 100, 100);
+                    border: none;
+                    border-bottom: 2px solid white;
+                    width: 100%;
+                }
+
+                & .col {
+
+                    padding: 0 1vw;
+                }
+            }
+
+            & .modal-footer {
+                border: none;
+
+                & .buttonlogin {
+                    background: linear-gradient(
+                        90deg,
+                        rgba(0, 151, 255, 1) 0%,
+                        rgba(122, 82, 172, 1) 45%,
+                        rgba(255, 0, 0, 1) 100%
+                    );
+                    border: none;
+                    border-radius: 0.4em;
+                    color: whitesmoke;
+                    padding: 1vh 2vw;
+                }
+
+                & #buttonincription {
+                    background: linear-gradient(
+                        90deg,
+                        rgba(0, 151, 255, 1) 0%,
+                        rgba(122, 82, 172, 1) 45%,
+                        rgba(255, 0, 0, 1) 100%
+                    );
+                    width: 80%;
+                    color : white;
+                    border: 1px;
+                    border-radius: 0.4em;
+                    padding: 1vh 2vw;
+                    margin-top: 3vh;
+                }
+            }
+        }
+    }
+}
+
+#TopInfos {
+
+    width: 100%;
+    border-style: solid;
+    border-color: whitesmoke;
+    border-radius: 0.5em;
+    border-width: 0.15em;
+    display: grid;
+    grid-template-columns: 1fr 3fr 2fr;
+    padding: 2vh 1vw;
+    color: whitesmoke;
+
+    & img {
+
+        margin: auto auto;
+        max-height: 15vh;
+    }
+
+    & #TheName {
+
+        font-size: 1.7rem;
+    }
+
+    & #otherinfos {
+
+        display: flex;
+        flex-direction: column;
+        justify-content: flex-end;
+        font-size: 1.2rem;
+
+        & p {
+
+            margin: 1vh 0;
+        }
+    }
+}
+
+#centerBut {
+
+    width: 100%;
+    margin: 7vh 0;
+    padding: 0 10vw;
+    display: flex;
+    flex-direction: row;
+    justify-content: space-around;
+    align-items: center;
+
+    & button {
+
+        border-style: none;
+        border-radius: 0.5em;
+        background-color: royalblue;
+        color: whitesmoke;
+        padding: 2vh 5vw;
+
+        &:hover {
+
+            transform: scale(1.05);
+        }
+    }
+}
+
+.ApplyFollowUps {
+
+    display: block;
+
+    & .ApplyFollowUp {
+
+        background: none;
+        border-style: solid;
+        border-color: whitesmoke;
+        border-radius: 0.5em;
+        color: whitesmoke;
+        padding: 2vh 2vw 2vh 4vw;
+        display: grid;
+        grid-template-areas: "entitled description"
+                             "company description"
+                             "step description";
+        grid-template-columns: 1fr 2fr;
+        grid-template-rows: 2fr 1fr 1fr;
+        margin-bottom: 3vh;
+
+        & .entitled {
+
+            grid-area: entitled;
+            margin: auto 0;
+            font-size: 2rem;
+
+        }
+        & .company {
+
+            grid-area: company;
+        }
+        & .step {
+
+            grid-area: step;
+        }
+        & .description {
+
+            grid-area: description;
+            overflow-wrap: anywhere;
+        }
+    }
+}
+
+
+#modaldeleteuser {
+    & .modal-dialog {
+        & .modal-content {
+            padding: 3vh 2vw;
+            background-color: rgb(50, 50, 50);
+
+            & .modal-header {
+                border: none;
+
+                & h5 {
+                    color: red;
+                    font-weight: bold;
+                    width: 100%;
+                    text-align: center;
+                }
+            }
+
+            & .modal-body {
+
+                & p {
+                    text-align: center;
+                    color: white;
+                    margin:0;
+                    padding:0;
+                }
+            }
+
+            & .modal-footer {
+                border: none;
+
+                & form {
+
+                    width: 100%;
+                    display: flex;
+                    justify-content: center;
+                }
+
+                & #buttondelete {
+                    background: rgb(0,86,255);
+                    background: linear-gradient(90deg, rgba(0,86,255,1) 0%, rgba(106,64,170,1) 50%, rgba(0,255,81,1) 100%);
+                    width: 40%;
+                    color : white;
+                    border: 1px;
+                    border-radius: 0.5em;
+                    padding: 1vh 2vw;
+
+                    &:hover {
+                        transform: scale(1.05);
+                    }
+                }
+            }
+        }
+    }
+}

@@ -1,0 +1,78 @@
+body {
+  background-color: #323232;
+  color: whitesmoke;
+}
+
+.grid-container {
+  display: -ms-grid;
+  display: grid;
+  -ms-grid-columns: 5% 20% 45% 5%;
+      grid-template-columns: 5% 20% 45% 5%;
+  -ms-grid-rows: 5% 45% 45% 5%;
+      grid-template-rows: 5% 45% 45% 5%;
+  gap: 0px 0px;
+      grid-template-areas: ". WELCOME-MESSAGE WELCOME-MESSAGE ." ". PICTURE FORM-SPACE ." ". . FORM-SPACE ." ". . . .";
+}
+
+.WELCOME-MESSAGE {
+  -ms-grid-row: 1;
+  -ms-grid-column: 2;
+  -ms-grid-column-span: 2;
+  grid-area: WELCOME-MESSAGE;
+}
+
+.PICTURE {
+  -ms-grid-row: 2;
+  -ms-grid-column: 2;
+  grid-area: PICTURE;
+}
+
+.FORM-SPACE {
+  -ms-grid-row: 2;
+  -ms-grid-row-span: 2;
+  -ms-grid-column: 3;
+  grid-area: FORM-SPACE;
+}
+
+.FORM-SPACE label {
+  color: white;
+  display: block;
+  width: 100%;
+}
+
+.FORM-SPACE .form-control {
+  color: white;
+  outline: none;
+  background: none;
+  border: none;
+  border-bottom: 2px solid white;
+  width: 100%;
+  text-align: center;
+}
+
+.FORM-SPACE #mamineure {
+  color: white;
+  outline: none;
+  background: none;
+  width: 100%;
+}
+
+.FORM-SPACE select {
+  color: white;
+  outline: none;
+  background: none;
+  border: none;
+  border-bottom: 2px solid white;
+  width: 100%;
+}
+
+.FORM-SPACE #complete {
+  background: #0056ff;
+  background: -webkit-gradient(linear, left top, right top, from(#0056ff), color-stop(50%, #6a40aa), to(#00ff51));
+  background: linear-gradient(90deg, #0056ff 0%, #6a40aa 50%, #00ff51 100%);
+  border: none;
+  border-radius: 0.4em;
+  color: whitesmoke;
+  padding: 1vh 2vw;
+}
+/*# sourceMappingURL=home.css.map */

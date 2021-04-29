@@ -1,0 +1,358 @@
+#right #detailedinfos {
+  overflow-y: scroll;
+}
+
+#right #detailedinfos .grid-container {
+  display: -ms-grid;
+  display: grid;
+  -ms-grid-columns: 1fr 1fr 0fr 0fr;
+      grid-template-columns: 1fr 1fr 0fr 0fr;
+  -ms-grid-rows: 1fr 0.5fr 0.5fr 2fr;
+      grid-template-rows: 1fr 0.5fr 0.5fr 2fr;
+  gap: 0px 0px;
+      grid-template-areas: "desciptioncompany desciptioncompany desciptioncompany desciptioncompany" "recentoffers location . ." "centerBut centerBut . ." "statistiques statistiques . .";
+}
+
+#right #detailedinfos .desciptioncompany {
+  -ms-grid-row: 1;
+  -ms-grid-column: 1;
+  -ms-grid-column-span: 4;
+  grid-area: desciptioncompany;
+}
+
+#right #detailedinfos .recentoffers {
+  -ms-grid-row: 2;
+  -ms-grid-column: 1;
+  grid-area: recentoffers;
+}
+
+#right #detailedinfos .location {
+  -ms-grid-row: 2;
+  -ms-grid-column: 2;
+  grid-area: location;
+}
+
+#right #detailedinfos .centerBut {
+  -ms-grid-row: 3;
+  -ms-grid-column: 1;
+  -ms-grid-column-span: 2;
+  grid-area: centerBut;
+}
+
+#right #detailedinfos .statistiques {
+  -ms-grid-row: 4;
+  -ms-grid-column: 1;
+  -ms-grid-column-span: 2;
+  grid-area: statistiques;
+}
+
+#right #detailedinfos .desciptioncompany {
+  color: white;
+  border-style: solid;
+  border-radius: 0.4em;
+  padding: 1em;
+  margin: 1vh;
+}
+
+#right #detailedinfos .desciptioncompany #hidecompany {
+  width: 10%;
+  padding: 1em;
+  border-radius: 0.4em;
+  background-color: royalblue;
+  color: white;
+}
+
+#right #detailedinfos .desciptioncompany #hidecompany:hover {
+  -webkit-box-shadow: 2px 2px 15px 2px #2b2929;
+          box-shadow: 2px 2px 15px 2px #2b2929;
+  background-color: #c41010;
+  -webkit-transform: scale(1.7);
+          transform: scale(1.7);
+}
+
+#right #detailedinfos .recentoffers {
+  color: white;
+  border-style: solid;
+  border-radius: 0.4em;
+  padding: 1em;
+  margin: 1vh;
+}
+
+#right #detailedinfos .location {
+  color: white;
+  border-style: solid;
+  border-radius: 0.4em;
+  padding: 1em;
+  margin: 1vh;
+}
+
+#right #detailedinfos .statistiques {
+  color: white;
+  border-style: solid;
+  border-radius: 0.4em;
+  padding: 1em;
+  margin: 1vh;
+}
+
+#right #detailedinfos .centerBut {
+  padding: 1em;
+  margin: 1vh;
+}
+
+#right #detailedinfos .centerBut #graduation, #right #detailedinfos .centerBut #update, #right #detailedinfos .centerBut #delete {
+  margin-left: 10%;
+  width: 20%;
+  padding: 1em;
+  border-radius: 0.4em;
+  background-color: royalblue;
+  color: white;
+}
+
+#right #detailedinfos .centerBut #graduation:hover, #right #detailedinfos .centerBut #update:hover, #right #detailedinfos .centerBut #delete:hover {
+  -webkit-box-shadow: 2px 2px 15px 2px #2b2929;
+          box-shadow: 2px 2px 15px 2px #2b2929;
+  background-color: blue;
+  -webkit-transform: scale(1.1);
+          transform: scale(1.1);
+}
+
+#modalcreatecompany .modal-dialog .modal-content {
+  padding: 3vh 2vw;
+  background-color: #323232;
+}
+
+#modalcreatecompany .modal-dialog .modal-content .modal-header {
+  border: none;
+  color: whitesmoke;
+}
+
+#modalcreatecompany .modal-dialog .modal-content .modal-header h5 {
+  width: 100%;
+  text-align: center;
+}
+
+#modalcreatecompany .modal-dialog .modal-content .modal-body #selectionstatut {
+  text-align: center;
+}
+
+#modalcreatecompany .modal-dialog .modal-content .modal-body label {
+  color: white;
+  display: block;
+  width: 100%;
+}
+
+#modalcreatecompany .modal-dialog .modal-content .modal-body .required:after {
+  content: "*";
+  color: red;
+}
+
+#modalcreatecompany .modal-dialog .modal-content .modal-body p {
+  color: white;
+  margin: 0;
+  padding: 0;
+}
+
+#modalcreatecompany .modal-dialog .modal-content .modal-body input {
+  color: white;
+  outline: none;
+  background: none;
+  border: none;
+  border-bottom: 2px solid white;
+  width: 100%;
+}
+
+#modalcreatecompany .modal-dialog .modal-content .modal-body select {
+  color: white;
+  outline: none;
+  background: none;
+  border: none;
+  border-bottom: 2px solid white;
+  width: 100%;
+}
+
+#modalcreatecompany .modal-dialog .modal-content .modal-body .col {
+  padding: 0 1vw;
+}
+
+#modalcreatecompany .modal-dialog .modal-content .modal-footer {
+  border: none;
+}
+
+#modalcreatecompany .modal-dialog .modal-content .modal-footer #buttoncreate {
+  background: #0056ff;
+  background: -webkit-gradient(linear, left top, right top, from(#0056ff), color-stop(50%, #6a40aa), to(#00ff51));
+  background: linear-gradient(90deg, #0056ff 0%, #6a40aa 50%, #00ff51 100%);
+  width: 40%;
+  color: white;
+  border: 1px;
+  border-radius: 0.5em;
+  padding: 1vh 2vw;
+}
+
+#modalupdatecompany .modal-dialog .modal-content {
+  padding: 3vh 2vw;
+  background-color: #323232;
+}
+
+#modalupdatecompany .modal-dialog .modal-content .modal-header {
+  border: none;
+  color: whitesmoke;
+}
+
+#modalupdatecompany .modal-dialog .modal-content .modal-header h5 {
+  width: 100%;
+  text-align: center;
+}
+
+#modalupdatecompany .modal-dialog .modal-content .modal-body label {
+  color: white;
+  display: block;
+  width: 100%;
+}
+
+#modalupdatecompany .modal-dialog .modal-content .modal-body .required:after {
+  content: "*";
+  color: red;
+}
+
+#modalupdatecompany .modal-dialog .modal-content .modal-body p {
+  color: white;
+  margin: 0;
+  padding: 0;
+}
+
+#modalupdatecompany .modal-dialog .modal-content .modal-body input {
+  color: white;
+  outline: none;
+  background: none;
+  border: none;
+  border-bottom: 2px solid white;
+  width: 100%;
+}
+
+#modalupdatecompany .modal-dialog .modal-content .modal-footer {
+  border: none;
+}
+
+#modalupdatecompany .modal-dialog .modal-content .modal-footer #buttonupdate {
+  background: #0056ff;
+  background: -webkit-gradient(linear, left top, right top, from(#0056ff), color-stop(50%, #6a40aa), to(#00ff51));
+  background: linear-gradient(90deg, #0056ff 0%, #6a40aa 50%, #00ff51 100%);
+  width: 40%;
+  color: white;
+  border: 1px;
+  border-radius: 0.5em;
+  padding: 1vh 2vw;
+}
+
+#modaldeletecompany .modal-dialog .modal-content {
+  padding: 3vh 2vw;
+  background-color: #323232;
+}
+
+#modaldeletecompany .modal-dialog .modal-content .modal-header {
+  border: none;
+}
+
+#modaldeletecompany .modal-dialog .modal-content .modal-header h5 {
+  color: red;
+  font-weight: bold;
+  width: 100%;
+  text-align: center;
+}
+
+#modaldeletecompany .modal-dialog .modal-content .modal-body p {
+  text-align: center;
+  color: white;
+  margin: 0;
+  padding: 0;
+}
+
+#modaldeletecompany .modal-dialog .modal-content .modal-footer {
+  border: none;
+}
+
+#modaldeletecompany .modal-dialog .modal-content .modal-footer form {
+  width: 100%;
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-pack: center;
+      -ms-flex-pack: center;
+          justify-content: center;
+}
+
+#modaldeletecompany .modal-dialog .modal-content .modal-footer #buttondelete {
+  background: #0056ff;
+  background: -webkit-gradient(linear, left top, right top, from(#0056ff), color-stop(50%, #6a40aa), to(#00ff51));
+  background: linear-gradient(90deg, #0056ff 0%, #6a40aa 50%, #00ff51 100%);
+  width: 40%;
+  color: white;
+  border: 1px;
+  border-radius: 0.5em;
+  padding: 1vh 2vw;
+}
+
+#modaldeletecompany .modal-dialog .modal-content .modal-footer #buttondelete:hover {
+  -webkit-transform: scale(1.05);
+          transform: scale(1.05);
+}
+
+#modalratecompany .modal-dialog .modal-content {
+  padding: 3vh 2vw;
+  background-color: #323232;
+}
+
+#modalratecompany .modal-dialog .modal-content .modal-header {
+  border: none;
+  color: whitesmoke;
+}
+
+#modalratecompany .modal-dialog .modal-content .modal-header h5 {
+  width: 100%;
+  text-align: center;
+}
+
+#modalratecompany .modal-dialog .modal-content .modal-body label {
+  color: white;
+  display: block;
+  width: 100%;
+}
+
+#modalratecompany .modal-dialog .modal-content .modal-body select {
+  color: white;
+  outline: none;
+  background-color: #323232;
+  border: none;
+  border-bottom: 2px solid white;
+  width: 100%;
+}
+
+#modalratecompany .modal-dialog .modal-content .modal-body input {
+  color: white;
+  outline: none;
+  background-color: #323232;
+  border: none;
+  border-bottom: 2px solid white;
+  width: 100%;
+}
+
+#modalratecompany .modal-dialog .modal-content .modal-footer {
+  border: none;
+}
+
+#modalratecompany .modal-dialog .modal-content .modal-footer #buttonrate {
+  background: #0056ff;
+  background: -webkit-gradient(linear, left top, right top, from(#0056ff), color-stop(50%, #6a40aa), to(#00ff51));
+  background: linear-gradient(90deg, #0056ff 0%, #6a40aa 50%, #00ff51 100%);
+  width: 40%;
+  color: white;
+  border: 1px;
+  border-radius: 0.5em;
+  padding: 1vh 2vw;
+}
+
+#modalratecompany .modal-lg {
+  max-width: 80%;
+}
+/*# sourceMappingURL=entreprise.css.map */

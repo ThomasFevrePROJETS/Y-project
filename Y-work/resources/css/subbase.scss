@@ -1,0 +1,109 @@
+body {
+    background-color: whitesmoke;
+}
+
+main {
+    padding : 0;
+    margin: 0;
+    display: grid;
+    grid-template-columns: 3fr 9fr;
+    border-top-style: solid;
+    border-color: black;
+    border-width: 0.15em;
+
+    & .LeftListContainer {
+        background: rgb(0,86,255);
+        background: linear-gradient(90deg, rgba(0,86,255,1) 0%, rgba(106,64,170,1) 50%, rgba(0,255,81,1) 100%);
+        padding: 3vh 2vw;
+        height: 90vh;
+        overflow-y: scroll;
+
+        & .LeftList {
+            position: relative;
+            background-color: whitesmoke;
+            border-radius: 0.5em;
+            box-shadow: 5px 5px 15px 5px #515151;
+            padding: 3vh 1vw;
+            margin-bottom: 5vh;
+            display: grid;
+            grid-template-areas: "companylogo title"
+                                 "companylogo infos";
+
+            grid-template-columns: 1fr 2fr;
+            grid-template-rows: 1fr 1fr;
+            cursor: pointer;
+
+            &:hover {
+                transform: 1.05s ease-in-out;
+                background-color: rgb(220, 220, 220) ;
+            }
+
+            & #LeftListImage {
+                grid-area: companylogo;
+                // display: block;
+                max-height: 10vh;
+                margin: auto auto;
+            }
+
+            & #Entitled {
+                grid-area: title;
+                text-align: left;
+                margin: auto auto;
+                font-weight: bold;
+            }
+
+            & #SubInfos {
+                grid-area: infos;
+                text-align: center;
+                margin: auto 0;
+                padding: 0 0.5vw;
+
+                & p {
+                    text-align: left;
+                    margin: 0;
+                }
+            }
+
+            & #Title {
+                margin-left:25%;
+            }
+        }
+    }
+
+    & #right {
+
+        & nav {
+            height: 5vh;
+            width: 100%;
+            background-color: whitesmoke;
+            display: flex;
+            flex-direction: row;
+            justify-content: space-between;
+            align-items: center;
+
+            & a {
+                padding: 0 1vw;
+                text-decoration: none;
+                color: black;
+                font-size: 1.2rem;
+                margin: auto 0;
+            }
+        }
+
+        & #detailedinfos {
+            height: 85vh;
+            width: 100%;
+            background-color: rgb(50, 50, 50);
+            padding: 3vh 2vw;
+            overflow-y: auto;
+        }
+    }
+}
+
+// @media screen and (max-width: 900px) {
+//     main {
+//         grid-template-columns: auto;
+//         color: chartreuse;
+//         border-color: rgb(255, 0, 0);
+//     }
+// }

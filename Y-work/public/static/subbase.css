@@ -1,0 +1,120 @@
+body {
+  background-color: whitesmoke;
+}
+
+main {
+  padding: 0;
+  margin: 0;
+  display: -ms-grid;
+  display: grid;
+  -ms-grid-columns: 3fr 9fr;
+      grid-template-columns: 3fr 9fr;
+  border-top-style: solid;
+  border-color: black;
+  border-width: 0.15em;
+}
+
+main .LeftListContainer {
+  background: #0056ff;
+  background: -webkit-gradient(linear, left top, right top, from(#0056ff), color-stop(50%, #6a40aa), to(#00ff51));
+  background: linear-gradient(90deg, #0056ff 0%, #6a40aa 50%, #00ff51 100%);
+  padding: 3vh 2vw;
+  height: 90vh;
+  overflow-y: scroll;
+}
+
+main .LeftListContainer .LeftList {
+  position: relative;
+  background-color: whitesmoke;
+  border-radius: 0.5em;
+  -webkit-box-shadow: 5px 5px 15px 5px #515151;
+          box-shadow: 5px 5px 15px 5px #515151;
+  padding: 3vh 1vw;
+  margin-bottom: 5vh;
+  display: -ms-grid;
+  display: grid;
+      grid-template-areas: "companylogo title" "companylogo infos";
+  -ms-grid-columns: 1fr 2fr;
+      grid-template-columns: 1fr 2fr;
+  -ms-grid-rows: 1fr 1fr;
+      grid-template-rows: 1fr 1fr;
+  cursor: pointer;
+}
+
+main .LeftListContainer .LeftList:hover {
+  -webkit-transform: 1.05s ease-in-out;
+          transform: 1.05s ease-in-out;
+  background-color: gainsboro;
+}
+
+main .LeftListContainer .LeftList #LeftListImage {
+  -ms-grid-row: 1;
+  -ms-grid-row-span: 2;
+  -ms-grid-column: 1;
+  grid-area: companylogo;
+  max-height: 10vh;
+  margin: auto auto;
+}
+
+main .LeftListContainer .LeftList #Entitled {
+  -ms-grid-row: 1;
+  -ms-grid-column: 2;
+  grid-area: title;
+  text-align: left;
+  margin: auto auto;
+  font-weight: bold;
+}
+
+main .LeftListContainer .LeftList #SubInfos {
+  -ms-grid-row: 2;
+  -ms-grid-column: 2;
+  grid-area: infos;
+  text-align: center;
+  margin: auto 0;
+  padding: 0 0.5vw;
+}
+
+main .LeftListContainer .LeftList #SubInfos p {
+  text-align: left;
+  margin: 0;
+}
+
+main .LeftListContainer .LeftList #Title {
+  margin-left: 25%;
+}
+
+main #right nav {
+  height: 5vh;
+  width: 100%;
+  background-color: whitesmoke;
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-orient: horizontal;
+  -webkit-box-direction: normal;
+      -ms-flex-direction: row;
+          flex-direction: row;
+  -webkit-box-pack: justify;
+      -ms-flex-pack: justify;
+          justify-content: space-between;
+  -webkit-box-align: center;
+      -ms-flex-align: center;
+          align-items: center;
+}
+
+main #right nav a {
+  padding: 0 1vw;
+  text-decoration: none;
+  color: black;
+  font-size: 1.2rem;
+  margin: auto 0;
+}
+
+main #right #detailedinfos {
+  height: 85vh;
+  width: 100%;
+  background-color: #323232;
+  padding: 3vh 2vw;
+  overflow-y: auto;
+}
+/*# sourceMappingURL=subbase.css.map */

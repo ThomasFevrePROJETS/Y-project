@@ -1,0 +1,16 @@
+{
+    "name": "Y work",
+    "short_name": "Y",
+    "start_url": "../index.php",
+    "display": "standalone",
+    "background-color": "#FFFF",
+    "theme_color" : "#03a9f4",
+    "orientation": "portrait-primary",
+    "icons": [
+        {
+        "src": "../static/images/Y.png",
+        "type": "image/png",
+        "sizes": "500x500"
+        }
+    ]
+}

@@ -1,0 +1,260 @@
+#right nav #createaccount {
+  float: left;
+}
+
+#right nav #otherlinks {
+  float: right;
+}
+
+#right nav button {
+  border: none;
+  color: black;
+  font-size: 1.2rem;
+  background: none;
+}
+
+#modalcreateaccount .modal-dialog .modal-content {
+  padding: 3vh 2vw;
+  background-color: #646464;
+}
+
+#modalcreateaccount .modal-dialog .modal-content .modal-header {
+  border: none;
+  color: whitesmoke;
+}
+
+#modalcreateaccount .modal-dialog .modal-content .modal-header h5 {
+  width: 100%;
+  text-align: center;
+}
+
+#modalcreateaccount .modal-dialog .modal-content .modal-body #selectionstatut {
+  text-align: center;
+}
+
+#modalcreateaccount .modal-dialog .modal-content .modal-body label {
+  color: white;
+  display: block;
+  width: 100%;
+}
+
+#modalcreateaccount .modal-dialog .modal-content .modal-body input {
+  color: white;
+  outline: none;
+  background-color: #646464;
+  border: none;
+  border-bottom: 2px solid white;
+  width: 100%;
+}
+
+#modalcreateaccount .modal-dialog .modal-content .modal-body select {
+  color: white;
+  outline: none;
+  background-color: #646464;
+  border: none;
+  border-bottom: 2px solid white;
+  width: 100%;
+}
+
+#modalcreateaccount .modal-dialog .modal-content .modal-body .col {
+  padding: 0 1vw;
+}
+
+#modalcreateaccount .modal-dialog .modal-content .modal-footer {
+  border: none;
+}
+
+#modalcreateaccount .modal-dialog .modal-content .modal-footer .buttonlogin {
+  background: -webkit-gradient(linear, left top, right top, from(#0097ff), color-stop(45%, #7a52ac), to(red));
+  background: linear-gradient(90deg, #0097ff 0%, #7a52ac 45%, red 100%);
+  border: none;
+  border-radius: 0.4em;
+  color: whitesmoke;
+  padding: 1vh 2vw;
+}
+
+#modalcreateaccount .modal-dialog .modal-content .modal-footer #buttonincription {
+  background: -webkit-gradient(linear, left top, right top, from(#0097ff), color-stop(45%, #7a52ac), to(red));
+  background: linear-gradient(90deg, #0097ff 0%, #7a52ac 45%, red 100%);
+  width: 80%;
+  color: white;
+  border: 1px;
+  border-radius: 0.4em;
+  padding: 1vh 2vw;
+  margin-top: 3vh;
+}
+
+#TopInfos {
+  width: 100%;
+  border-style: solid;
+  border-color: whitesmoke;
+  border-radius: 0.5em;
+  border-width: 0.15em;
+  display: -ms-grid;
+  display: grid;
+  -ms-grid-columns: 1fr 3fr 2fr;
+      grid-template-columns: 1fr 3fr 2fr;
+  padding: 2vh 1vw;
+  color: whitesmoke;
+}
+
+#TopInfos img {
+  margin: auto auto;
+  max-height: 15vh;
+}
+
+#TopInfos #TheName {
+  font-size: 1.7rem;
+}
+
+#TopInfos #otherinfos {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-orient: vertical;
+  -webkit-box-direction: normal;
+      -ms-flex-direction: column;
+          flex-direction: column;
+  -webkit-box-pack: end;
+      -ms-flex-pack: end;
+          justify-content: flex-end;
+  font-size: 1.2rem;
+}
+
+#TopInfos #otherinfos p {
+  margin: 1vh 0;
+}
+
+#centerBut {
+  width: 100%;
+  margin: 7vh 0;
+  padding: 0 10vw;
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-orient: horizontal;
+  -webkit-box-direction: normal;
+      -ms-flex-direction: row;
+          flex-direction: row;
+  -ms-flex-pack: distribute;
+      justify-content: space-around;
+  -webkit-box-align: center;
+      -ms-flex-align: center;
+          align-items: center;
+}
+
+#centerBut button {
+  border-style: none;
+  border-radius: 0.5em;
+  background-color: royalblue;
+  color: whitesmoke;
+  padding: 2vh 5vw;
+}
+
+#centerBut button:hover {
+  -webkit-transform: scale(1.05);
+          transform: scale(1.05);
+}
+
+.ApplyFollowUps {
+  display: block;
+}
+
+.ApplyFollowUps .ApplyFollowUp {
+  background: none;
+  border-style: solid;
+  border-color: whitesmoke;
+  border-radius: 0.5em;
+  color: whitesmoke;
+  padding: 2vh 2vw 2vh 4vw;
+  display: -ms-grid;
+  display: grid;
+      grid-template-areas: "entitled description" "company description" "step description";
+  -ms-grid-columns: 1fr 2fr;
+      grid-template-columns: 1fr 2fr;
+  -ms-grid-rows: 2fr 1fr 1fr;
+      grid-template-rows: 2fr 1fr 1fr;
+  margin-bottom: 3vh;
+}
+
+.ApplyFollowUps .ApplyFollowUp .entitled {
+  -ms-grid-row: 1;
+  -ms-grid-column: 1;
+  grid-area: entitled;
+  margin: auto 0;
+  font-size: 2rem;
+}
+
+.ApplyFollowUps .ApplyFollowUp .company {
+  -ms-grid-row: 2;
+  -ms-grid-column: 1;
+  grid-area: company;
+}
+
+.ApplyFollowUps .ApplyFollowUp .step {
+  -ms-grid-row: 3;
+  -ms-grid-column: 1;
+  grid-area: step;
+}
+
+.ApplyFollowUps .ApplyFollowUp .description {
+  -ms-grid-row: 1;
+  -ms-grid-row-span: 3;
+  -ms-grid-column: 2;
+  grid-area: description;
+  overflow-wrap: anywhere;
+}
+
+#modaldeleteuser .modal-dialog .modal-content {
+  padding: 3vh 2vw;
+  background-color: #323232;
+}
+
+#modaldeleteuser .modal-dialog .modal-content .modal-header {
+  border: none;
+}
+
+#modaldeleteuser .modal-dialog .modal-content .modal-header h5 {
+  color: red;
+  font-weight: bold;
+  width: 100%;
+  text-align: center;
+}
+
+#modaldeleteuser .modal-dialog .modal-content .modal-body p {
+  text-align: center;
+  color: white;
+  margin: 0;
+  padding: 0;
+}
+
+#modaldeleteuser .modal-dialog .modal-content .modal-footer {
+  border: none;
+}
+
+#modaldeleteuser .modal-dialog .modal-content .modal-footer form {
+  width: 100%;
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-pack: center;
+      -ms-flex-pack: center;
+          justify-content: center;
+}
+
+#modaldeleteuser .modal-dialog .modal-content .modal-footer #buttondelete {
+  background: #0056ff;
+  background: -webkit-gradient(linear, left top, right top, from(#0056ff), color-stop(50%, #6a40aa), to(#00ff51));
+  background: linear-gradient(90deg, #0056ff 0%, #6a40aa 50%, #00ff51 100%);
+  width: 40%;
+  color: white;
+  border: 1px;
+  border-radius: 0.5em;
+  padding: 1vh 2vw;
+}
+
+#modaldeleteuser .modal-dialog .modal-content .modal-footer #buttondelete:hover {
+  -webkit-transform: scale(1.05);
+          transform: scale(1.05);
+}
+/*# sourceMappingURL=accounts.css.map */
